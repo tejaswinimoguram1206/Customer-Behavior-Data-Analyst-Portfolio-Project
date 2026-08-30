@@ -13,38 +13,45 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
 
 ![Project Workflow](https://github.com/user-attachments/assets/8bbd5dc9-eb6c-40c1-8f19-c08b4107f654)
 
-## Steps of this Project
+# 📊 End-to-End Customer Behavior & Trends Analysis
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI.git
-   cd customer-trends-data-analysis-SQL-Python-PowerBI
-   ```
-2. **Open Customer_Shopping_Behavior_Analysis.ipynb notebook**
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-    This file contains:
+An end-to-end data analytics project uncovering customer purchasing patterns, segmenting consumer behavior, and identifying key revenue drivers using **Python**, **SQL**, and an interactive **Power BI** dashboard.
 
-      - Data Import
+---
 
-      - Data exploration
+## 📌 Executive Summary
+Understanding customer purchasing drivers and churn triggers is vital for optimizing marketing spend and product merchandising. This project analyzes multi-dimensional customer transaction data to address critical business questions:
+* What demographic factors correlate highest with lifetime purchase value?
+* Which product categories and seasonal trends drive the highest revenue?
+* How can customer segmentation optimize loyalty and promotional campaigns?
 
-      - Data cleaning
+---
 
-      - Connection to SQL Database
-  
-3. **Load the data from Python notebook into MySQL/PostgreSQL/MS SQL Server**
+## 🛠️ Tech Stack & Tools
+* **Data Processing & EDA:** Python (`pandas`, `numpy`, `matplotlib`, `seaborn`)
+* **Database & Querying:** SQL (PostgreSQL / MySQL) — CTEs, Window Functions, Aggregate Joins
+* **Business Intelligence:** Microsoft Power BI (DAX, Power Query, Dynamic Dashboards)
+* **Environment:** Jupyter Notebook, VS Code, Git
 
-      - Create a database in SQL
+---
 
-      - Run Python code to load data into SQL database
-  
-      - Open **customer_behavior_sql_queries.sql**
-  
-      - Answer Business Questions using SQL Queries 
-      
-4. **Connect the SQL Database to Power BI**
-
-      - Open **customer_behavior_dashboard.pbix**
-   
-      - Create interactive dashboard in Power BI
-  
+## 📂 Repository Structure
+```text
+├── data/
+│   ├── raw_customer_data.csv          # Raw transactional data
+│   └── cleaned_customer_data.csv      # Processed dataset
+├── sql/
+│   ├── schema_setup.sql               # Database DDL
+│   └── business_analysis_queries.sql  # SQL queries answering key business questions
+├── notebooks/
+│   └── customer_behavior_eda.ipynb    # Python EDA, data cleansing & statistical analysis
+├── power_bi/
+│   └── customer_insights_dashboard.pbix # Interactive Power BI report file
+├── assets/
+│   └── dashboard_overview.png         # Report screenshots
+└── README.md
